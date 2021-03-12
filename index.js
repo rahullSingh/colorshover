@@ -40,9 +40,9 @@ $(".colors").hover(function(){
     break;
 
   }
-
+$("h1").slideDown();
   setTimeout(function(){
-    $("h1").text(``);
+    $("h1").slideUp();
   },2000);
 
 })
