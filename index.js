@@ -40,6 +40,7 @@ $(".colors").hover(function(){
     break;
 
   }
+
 $("h1").slideDown();
   setTimeout(function(){
     $("h1").slideUp();
