@@ -63,6 +63,23 @@ document.documentElement.requestFullscreen().catch(function(e){
   }
 }
 
+// animation.restart();
+
+$(document).click(function(){
+  var animation = anime({
+    targets: '.paintings .colors',
+    translateX: 25,
+    rotateZ:15,
+    delay: function(el, i) { return i * 100; },
+    direction: 'alternate',
+    loop: true,
+    easing: 'easeInOutSine'
+  });
+
+})
+
+document.querySelector('.restart-demo .restart').onclick = animation.restart;
+
 
 // $("h1").hover(function(){
 //
