@@ -42,6 +42,12 @@ $(".colors").hover(function(){
 
 })
 
+// mouseout event
+
+$(".colors").mouseout(function(){
+  $("h1").html(<h1>hover on me to get color name</h1>)
+})
+
 
 $(document).dblclick(function(){
   fullscreen();
