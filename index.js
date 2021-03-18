@@ -4,36 +4,44 @@ $(".colors").hover(function(){
   $("h1").text(`${color}`);
   switch(color){
     case "orange":
-    $("h1").addClass("first-color");
+    $("h1").css({
+      "color":"#f58c35",
+      "text-decoration":"underline"
+      // "border":`2px solid ${color}`
+    }
+    )
+      ;
     break;
 
     case "yellow":
-    $("h1").addClass("second-color");
-
+    $("h1").css(
+      "color","#f5DE35");
     break;
 
     case "green":
-    $("h1").addClass("third-color");
-
+    $("h1").css(
+      "color","#35f5a4");
     break;
 
     case "sky-blue":
-    $("h1").addClass("fourth-color");
-
+    $("h1").css(
+      "color","#35eff5");
     break;
 
     case "violet":
-    $("h1").addClass("fifth-color");
-
+    $("h1").css(
+      "color","#a935f5");
     break;
 
 
     case "pink":
-    $("h1").addClass("sixth-color");
-
+    $("h1").css(
+      "color","#f535d2");
     break;
 
   }
+
+
 
 // $("h1").slideDown();
   // setTimeout(function(){
@@ -42,12 +50,11 @@ $(".colors").hover(function(){
 
 })
 
-// mouseout event
-
 $(".colors").mouseout(function(){
-  $("h1").html(<h1>hover on me to get color name</h1>)
+  $("h1").text("hover me to get color name")
+  $("h1").addClass("black-color")
+  console.log("mouseout");
 })
-
 
 $(document).dblclick(function(){
   fullscreen();
