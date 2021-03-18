@@ -52,6 +52,28 @@ h1 {
 }
 
 
+.first-color {
+  color: #f58c35;
+}
+
+.second-color {
+  color: #f5DE35;
+}
+
+.third-color {
+  color: #35f5a4;
+}
+.fourth-color {
+  color: #35eff5;
+}
+.fifth-color {
+  color: #a935f5;
+}
+.sixth-color {
+  color: #f535d2;
+}
+
+
 /* medai queries */
 @media (max-width:688px){
   /* h1 {

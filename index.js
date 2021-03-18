@@ -4,47 +4,41 @@ $(".colors").hover(function(){
   $("h1").text(`${color}`);
   switch(color){
     case "orange":
-    $("h1").css({
-      "color":"#f58c35",
-      "text-decoration":"underline"
-      // "border":`2px solid ${color}`
-    }
-    )
-      ;
+    $("h1").addClass("first-color");
     break;
 
     case "yellow":
-    $("h1").css(
-      "color","#f5DE35");
+    $("h1").addClass("second-color");
+
     break;
 
     case "green":
-    $("h1").css(
-      "color","#35f5a4");
+    $("h1").addClass("third-color");
+
     break;
 
     case "sky-blue":
-    $("h1").css(
-      "color","#35eff5");
+    $("h1").addClass("fourth-color");
+
     break;
 
     case "violet":
-    $("h1").css(
-      "color","#a935f5");
+    $("h1").addClass("fifth-color");
+
     break;
 
 
     case "pink":
-    $("h1").css(
-      "color","#f535d2");
+    $("h1").addClass("sixth-color");
+
     break;
 
   }
 
-$("h1").slideDown();
-  setTimeout(function(){
-    $("h1").slideUp();
-  },2000);
+// $("h1").slideDown();
+  // setTimeout(function(){
+  //   $("h1").slideUp();
+  // },2000);
 
 })
 
